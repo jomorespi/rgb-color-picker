@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RGBA Picker</title>
+  </head>
+  <body id="picker__body">
+
+    <h1>RGB Color Picker by <a href="https://jordimoreno.cat">@jomorespi</a></h1>
+    
+    <main>
+
+      <form id="picker">
+        <ul>
+          <li>
+            <label for="red">Red</label>
+            <input type="range" name="red" id="red" min="0" max="256" value="12">
+          </li>
+          <li>
+            <label for="green">Green</label>
+            <input type="range" name="green" id="green" min="0" max="256" value="3">
+          </li>
+          <li>
+            <label for="blue">Blue</label>
+            <input type="range" name="blue" id="blue" min="0" max="256" value="85">
+          </li>
+        </ul>
+
+        <input type="submit" value="rgb(0,0,0)" title="Copy color to clipboard">
+
+        <p class="tooltip" aria-hidden="true">Color copied to clipboard!</p>
+
+      </div>
+
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
